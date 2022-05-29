@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestSuite" time="5.173" tests="4" failures="0" errors="0">
+   <testsuite name="TestSuite" tests="4" failures="0" errors="0" time="5.173" skipped="0" timestamp="2022-05-29 17:04:38" hostname="mac - 192.168.1.4" id="Test Suites/TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/mac/Katalon Studio/test1/Reports/20220529_170426/TestSuite/20220529_170427"/>
+         <property name="logFiles" value="/Users/mac/Katalon Studio/test1/Reports/20220529_170426/TestSuite/20220529_170427/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="mac - 192.168.1.4"/>
+         <property name="hostAddress" value="192.168.1.4"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.3.5.208"/>
+      </properties>
+      <testcase name="Test Cases/1.Get List User" time="2.74" classname="Test Cases/1.Get List User" status="PASSED">
+         <system-out><![CDATA[2022-05-29 17:04:38 - [TEST_CASE][PASSED] - Test Cases/1.Get List User: Test Cases/1.Get List User
+
+2022-05-29 17:04:38 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("1.Get List user")): Send request successfully
+
+2022-05-29 17:04:41 - [MESSAGE][INFO] - HAR: /Users/mac/Katalon Studio/test1/Reports/20220529_170426/TestSuite/20220529_170427/requests/main/0.har
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Send request successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "page", page): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "per_page", "6"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "total", "12"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "total_pages", "2"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[0].id", "1"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[0].email", "george.bluth@reqres.in"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[0].first_name", "George"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[0].last_name", "Bluth"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[0].avatar", "https://reqres.in/img/faces/1-image.jpg"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "support.url", "https://reqres.in/#support-heading"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "support.text", "To keep ReqRes free, contributions towards server costs are appreciated!"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/2.Get Single User" time="0.489" classname="Test Cases/2.Get Single User" status="PASSED">
+         <system-out><![CDATA[2022-05-29 17:04:41 - [TEST_CASE][PASSED] - Test Cases/2.Get Single User: Test Cases/2.Get Single User
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("2.Get Single User")): Send request successfully
+
+2022-05-29 17:04:41 - [MESSAGE][INFO] - HAR: /Users/mac/Katalon Studio/test1/Reports/20220529_170426/TestSuite/20220529_170427/requests/main/1.har
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Send request successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.id", user): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.email", "janet.weaver@reqres.in"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.first_name", "Janet"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.last_name", "Weaver"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.avatar", "https://reqres.in/img/faces/2-image.jpg"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "support.url", "https://reqres.in/#support-heading"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "support.text", "To keep ReqRes free, contributions towards server costs are appreciated!"): Verify element property value successfully
+
+2022-05-29 17:04:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - id = id: null
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - id = id: null
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - email = email: null
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - println("extracted data = " + email): null
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - email = email: null
+
+2022-05-29 17:04:41 - [TEST_STEP][PASSED] - println("extracted data = " + email): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/3.PUT User" time="0.853" classname="Test Cases/3.PUT User" status="PASSED">
+         <system-out><![CDATA[2022-05-29 17:04:41 - [TEST_CASE][PASSED] - Test Cases/3.PUT User: Test Cases/3.PUT User
+
+2022-05-29 17:04:42 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("3.PUT user", ["name":"${GlobalVariable.name}", "job":"${GlobalVariable.job}"])): Send request successfully
+
+2022-05-29 17:04:42 - [MESSAGE][INFO] - HAR: /Users/mac/Katalon Studio/test1/Reports/20220529_170426/TestSuite/20220529_170427/requests/main/2.har
+
+2022-05-29 17:04:42 - [MESSAGE][PASSED] - Send request successfully
+
+2022-05-29 17:04:42 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "name", name): Verify element property value successfully
+
+2022-05-29 17:04:42 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-05-29 17:04:42 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "job", job): Verify element property value successfully
+
+2022-05-29 17:04:42 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/4.Post register Successfull" time="0.773" classname="Test Cases/4.Post register Successfull" status="PASSED">
+         <system-out><![CDATA[2022-05-29 17:04:42 - [TEST_CASE][PASSED] - Test Cases/4.Post register Successfull: Test Cases/4.Post register Successfull
+
+2022-05-29 17:04:42 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("4.POST Register successfull", ["email":"${GlobalVariable.email}", "password":"${GlobalVariable.password}"])): Send request successfully
+
+2022-05-29 17:04:43 - [MESSAGE][INFO] - HAR: /Users/mac/Katalon Studio/test1/Reports/20220529_170426/TestSuite/20220529_170427/requests/main/3.har
+
+2022-05-29 17:04:43 - [MESSAGE][PASSED] - Send request successfully
+
+2022-05-29 17:04:43 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "id", id): Verify element property value successfully
+
+2022-05-29 17:04:43 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-05-29 17:04:38 - [TEST_SUITE][PASSED] - TestSuite: Test Cases/4.Post register Successfull]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

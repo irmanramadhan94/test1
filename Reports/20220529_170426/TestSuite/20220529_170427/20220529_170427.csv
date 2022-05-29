@@ -1,0 +1,44 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TestSuite,,,,2022-05-29 17:04:38,2022-05-29 17:04:43,5.173s,PASSED
+,,,,,,,
+Test Cases/1.Get List User,,,,2022-05-29 17:04:38,2022-05-29 17:04:41,2.740s,PASSED
+"response = sendRequest(findTestObject(""1.Get List user""))",,,,2022-05-29 17:04:38,2022-05-29 17:04:41,2.240s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.013s,PASSED
+"verifyElementPropertyValue(response, ""page"", page)",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.050s,PASSED
+"verifyElementPropertyValue(response, ""per_page"", ""6"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.017s,PASSED
+"verifyElementPropertyValue(response, ""total"", ""12"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.021s,PASSED
+"verifyElementPropertyValue(response, ""total_pages"", ""2"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.016s,PASSED
+"verifyElementPropertyValue(response, ""data[0].id"", ""1"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.019s,PASSED
+"verifyElementPropertyValue(response, ""data[0].email"", ""george.bluth@reqres.in"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.014s,PASSED
+"verifyElementPropertyValue(response, ""data[0].first_name"", ""George"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.015s,PASSED
+"verifyElementPropertyValue(response, ""data[0].last_name"", ""Bluth"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.014s,PASSED
+"verifyElementPropertyValue(response, ""data[0].avatar"", ""https://reqres.in/img/faces/1-image.jpg"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.014s,PASSED
+"verifyElementPropertyValue(response, ""support.url"", ""https://reqres.in/#support-heading"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.012s,PASSED
+"verifyElementPropertyValue(response, ""support.text"", ""To keep ReqRes free, contributions towards server costs are appreciated!"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.013s,PASSED
+,,,,,,,
+Test Cases/2.Get Single User,,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.489s,PASSED
+"response = sendRequest(findTestObject(""2.Get Single User""))",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.176s,PASSED
+"verifyElementPropertyValue(response, ""data.id"", user)",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.015s,PASSED
+"verifyElementPropertyValue(response, ""data.email"", ""janet.weaver@reqres.in"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.013s,PASSED
+"verifyElementPropertyValue(response, ""data.first_name"", ""Janet"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.013s,PASSED
+"verifyElementPropertyValue(response, ""data.last_name"", ""Weaver"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.016s,PASSED
+"verifyElementPropertyValue(response, ""data.avatar"", ""https://reqres.in/img/faces/2-image.jpg"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.019s,PASSED
+"verifyElementPropertyValue(response, ""support.url"", ""https://reqres.in/#support-heading"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.016s,PASSED
+"verifyElementPropertyValue(response, ""support.text"", ""To keep ReqRes free, contributions towards server costs are appreciated!"")",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.014s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.001s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.009s,PASSED
+id = id,,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.001s,PASSED
+id = id,,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.000s,PASSED
+email = email,,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.000s,PASSED
+"println(""extracted data = "" + email)",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.002s,PASSED
+email = email,,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.001s,PASSED
+"println(""extracted data = "" + email)",,,,2022-05-29 17:04:41,2022-05-29 17:04:41,0.000s,PASSED
+,,,,,,,
+Test Cases/3.PUT User,,,,2022-05-29 17:04:41,2022-05-29 17:04:42,0.853s,PASSED
+"response = sendRequest(findTestObject(""3.PUT user"", [""name"":""${GlobalVariable.name}"", ""job"":""${GlobalVariable.job}""]))",,,,2022-05-29 17:04:42,2022-05-29 17:04:42,0.605s,PASSED
+"verifyElementPropertyValue(response, ""name"", name)",,,,2022-05-29 17:04:42,2022-05-29 17:04:42,0.013s,PASSED
+"verifyElementPropertyValue(response, ""job"", job)",,,,2022-05-29 17:04:42,2022-05-29 17:04:42,0.012s,PASSED
+,,,,,,,
+Test Cases/4.Post register Successfull,,,,2022-05-29 17:04:42,2022-05-29 17:04:43,0.773s,PASSED
+"response = sendRequest(findTestObject(""4.POST Register successfull"", [""email"":""${GlobalVariable.email}"", ""password"":""${GlobalVariable.password}""]))",,,,2022-05-29 17:04:42,2022-05-29 17:04:43,0.588s,PASSED
+"verifyElementPropertyValue(response, ""id"", id)",,,,2022-05-29 17:04:43,2022-05-29 17:04:43,0.014s,PASSED
